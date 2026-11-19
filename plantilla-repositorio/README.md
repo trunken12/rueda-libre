@@ -25,7 +25,7 @@ Sitio web estático de **Rueda Libre**, un taller con alquiler de bicicletas el�
 ```
 index.html, servicios.html, contacto.html …   páginas
 css/estilos.css                               hoja de estilos
-img/                                          imágenes
+Imagenes/                                     imágenes
 docs/                                         mapa del sitio, guía de estilo, decisiones, auditoría, retrospectivas
 ```
 
