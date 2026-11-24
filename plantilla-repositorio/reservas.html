@@ -31,6 +31,95 @@
   </header>
 
   <main>
+
+    <form action="/reservas" method="post">
+      <fieldset>
+        <legend>Tus datos</legend>
+
+        <p>
+
+          <label for="nombre">Nombre y Apellidos</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </p>
+        
+        <p>
+          <label for="correo">Correo electronico</label>
+            <input type="email" id="correo" name="correo" required>
+        </p>
+        
+        <p>
+          <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono"
+            pattern="[6789][0-9]{8}"
+            title="El numero debe empezar por 6,7,8,o 9 y tener 9 digitos"
+            maxlength="9"
+            required>
+        </p>
+
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Tu reserva</legend>
+        <label for="servicio">Servicio</label>
+        <select id="servicio" name="servicio" required>
+          <option value="">Elige un servicio</option>
+          <option value="alquiler">Alquiler</option>
+          <option value="taller">Taller</option>
+          <option value="revision">Revision de bateria y motor</option>
+          <option value="ruta">Rutas guiadas</option>
+        </select>
+
+        
+        <fieldset id="opciones-alquiler" hidden disabled>
+          <legend>Modelo de bicicleta</legend>
+          <input type="radio" id="urbana" name="alquiler" value="alquiler-urbano" required>
+          <label for="urbana">Urbana</label>
+          <input type="radio" id="montaña" name="alquiler" value="alquiler-montaña" required>
+          <label for="montaña">Montaña</label>
+          <input type="radio" id="plegable" name="alquiler" value="alquiler-plegable" required>
+          <label for="plegable">Plegable</label>
+        </fieldset>
+      
+
+        <p>
+          <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" min="2026-11-10" required>
+        </p>
+        
+        <p>
+          <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora" min="09:30" max="19:30"
+            step="60" required>
+        </p>
+        
+        <p>
+          <label for="numero">Numero de personas</label>
+            <input type="number" id="numero" name="numero" min="1" max="8">
+        </p>
+
+        <p>  
+          <label for="observaciones">Observaciones</label>
+          <textarea id="observaciones" name="observaciones" rows="4"
+          maxlength="300"></textarea>
+        </p>
+
+      </fieldset>
+
+      <p>
+        <input type="checkbox" id="privacidad" name="privacidad" value="si"
+          required>
+        <label for="privacidad">He leído y acepto que Rueda Libre use mis datos únicamente para gestionar esta reserva. Puedo pedir que los borren escribiendo a hola@ruedalibre.example.</label>
+      </p>
+
+      <p>
+        <button type="submit" accesskey="r">Reservar <em>(Alt+R)</em></button>
+      </p>
+
+
+
+
+    </form>
     
 
   </main>
@@ -44,5 +133,18 @@
      <a href="tel:+34910000000">Llámanos</a>
     <p>&copy; Rueda Libre</p>
   </footer>
+  <script>
+    const servicio = document.getElementById("servicio");
+    const opcionesAlquiler = document.getElementById("opciones-alquiler");
+
+    function actualizarOpcionesAlquiler() {
+      const esAlquiler = servicio.value === "alquiler";
+      opcionesAlquiler.hidden = !esAlquiler;
+      opcionesAlquiler.disabled = !esAlquiler;
+    }
+
+    servicio.addEventListener("change", actualizarOpcionesAlquiler);
+    actualizarOpcionesAlquiler();
+  </script>
 </body>
 </html>

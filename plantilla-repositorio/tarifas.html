@@ -22,9 +22,9 @@
         <li><a href="index.html">Inicio</a></li>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="tarifas.html" aria-current="page">Tarifas</a></li>
-        <!-- <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="preguntas.html">Preguntas Frecuentes</a></li> -->
+        <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
       </ul>
     </nav>
   </header>
@@ -36,30 +36,137 @@
     <!--<p>Texto de la página.</p> -->
     
     
-    <h2>ALQUILER</h2>
-    <p>Modelo | Por hora | Por día | Fin de semana</p>
-    <p>Urbana |    6 €   |   25 €  |     45 €</p>
-    <p>Montaña |    9 €   |   38 €  |     70 €</p>
-    <p>Plegable |    5 €   |   20 €  |     35 €</p>
-    <em>Fianza en todos los modelos: <strong>50 €</strong>, que se devuelve al entregar la bici.</em>
+    <table>
+  <caption>Tarifas de alquiler de bicicletas eléctricas</caption>
+  <thead>
+    <tr>
+      <th colspan="4">ALQUILER</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="col">Modelo</th>
+      <th scope="col">Por hora</th>
+      <th scope="col">Por dia</th>
+      <th scope="col">Fin de semana</th>      
+    </tr>
 
-    <figure>
+    <tr>
+      <th scope="row">Urbana</th>
+      <td>6€</td>
+      <td>25€</td>
+      <td>45€</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Montaña</th>
+      <td>9€</td>
+      <td>38€</td>
+      <td>70€</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Plegable</th>
+      <td>5€</td>
+      <td>20€</td>
+      <td>35€</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4"><em><strong>Fianza en todos los modelos: 50 €,</strong> que se devuelve al entregar la bici</em>.</td>
+    </tr>
+  </tfoot>
+</table>
+
+<figure>
       <img src="Imagenes/taller-400.jpg" alt="bicicleta dentro del taller" width="300">
-      <figcaption>Precios orientativos del taller</figcaption>
     </figure>
-    
-    <h2>TALLER</h2>
-    <p>Modelo | Precio</p>
-    <p>Revisión básica | 25 €</p>
-    <p>Cambio de cámara | 12 €</p>
-    <p>Ajuste de frenos | 15 €</p>
-    <p>Revisión de batería y motor | 30 €</p>
+
+<table>
+  <caption>Precios orientativos del taller</caption>
+  <thead>
+    <tr>
+      <th colspan="2">TALLER</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th scope="col">Servicio</th>
+      <th scope="col">Precio</th>
+    </tr>
+
+    <tr>
+      <td>Revision basica</td>
+      <td>25€</td>
+    </tr>
+
+    <tr>
+      <td>Cambio de camara</td>
+      <td>12€</td>
+    </tr>
+
+    <tr>
+      <td>Ajuste de frenos</td>
+      <td>15€</td>
+    </tr>
+
+    <tr>
+      <td>Revision de bateria y motor</td>
+      <td>30€</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<table>
   
-    
+    <caption>Horario de apertura</caption>
   
 
-  
-  </main>
+  <tbody>
+
+    <tr>
+      <th scope="col">Dia</th>
+      <th scope="col">Mañana</th>
+      <th scope="col">Tarde</th>
+      <th>  </th>
+    </tr>
+
+    
+
+    <tr>
+      <th scope="row">Lunes a Viernes</th>
+      <td>9:30 a 14:00</td>
+      <td>16:30 a 20:00</td>
+      <td>  </td>
+    </tr>
+
+    <tr>
+      <th scope="colgroup">Sabado</th>
+      <td>10:00 a 14:00</td>
+      <td>Cerrado</td>
+      <th rowspan="2" scope="col">Rutas guiadas:<br>consultar fechas</th>
+    </tr>
+
+    <tr>
+      <th scope="colgroup">Domingo</th>
+      <td colspan="2">Cerrado</td>
+    </tr>
+       
+    </tbody>
+
+    
+
+    <tfoot>
+    <tr>
+      <td colspan="4"><em> <strong>Nota:</strong>Agosto, de 10:00 a 14:00 de lunes a sábado.</em></td>
+    </tr>
+  </tfoot>
+</table>
+
+</main>
 
    
   
