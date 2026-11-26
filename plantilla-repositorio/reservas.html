@@ -13,22 +13,23 @@
   <!-- TODO: título único y descriptivo, por ejemplo «Inicio · Rueda Libre» -->
   <title>Inicio · Rueda Libre</title>
   <!-- TODO (sesión 8): enlaza aquí tu hoja de estilos -->
+   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
   <header>
     <!-- TODO: nombre o logo del negocio -->
-    <img src="Imagenes/logo.png" alt="Logo" width="300">
-    <nav aria-label="Principal">
+    <img src="/Imagenes/logo.png" alt="Logo" width="600">
+  </header>
+  <nav aria-label="Principal">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="tarifas.html">Tarifas</a></li>
-        <li><a href="reservas.html" aria-current="page">Reservas</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
       </ul>
-    </nav>
-  </header>
+  </nav>
 
   <main>
 
@@ -41,12 +42,12 @@
           <label for="nombre">Nombre y Apellidos</label>
             <input type="text" id="nombre" name="nombre" required>
         </p>
-        
+
         <p>
           <label for="correo">Correo electronico</label>
             <input type="email" id="correo" name="correo" required>
         </p>
-        
+
         <p>
           <label for="telefono">Teléfono</label>
             <input type="tel" id="telefono" name="telefono"
@@ -70,7 +71,7 @@
           <option value="ruta">Rutas guiadas</option>
         </select>
 
-        
+
         <fieldset id="opciones-alquiler" hidden disabled>
           <legend>Modelo de bicicleta</legend>
           <input type="radio" id="urbana" name="alquiler" value="alquiler-urbano" required>
@@ -80,25 +81,25 @@
           <input type="radio" id="plegable" name="alquiler" value="alquiler-plegable" required>
           <label for="plegable">Plegable</label>
         </fieldset>
-      
+
 
         <p>
           <label for="fecha">Fecha</label>
             <input type="date" id="fecha" name="fecha" min="2026-11-10" required>
         </p>
-        
+
         <p>
           <label for="hora">Hora</label>
             <input type="time" id="hora" name="hora" min="09:30" max="19:30"
             step="60" required>
         </p>
-        
+
         <p>
           <label for="numero">Numero de personas</label>
             <input type="number" id="numero" name="numero" min="1" max="8">
         </p>
 
-        <p>  
+        <p>
           <label for="observaciones">Observaciones</label>
           <textarea id="observaciones" name="observaciones" rows="4"
           maxlength="300"></textarea>
@@ -120,7 +121,7 @@
 
 
     </form>
-    
+
 
   </main>
 

@@ -11,31 +11,32 @@
   <!-- TODO: título único y descriptivo, por ejemplo «Tarifas · Rueda Libre» -->
   <title>Tarifas</title>
   <!-- TODO (sesión 8): enlaza aquí tu hoja de estilos -->
+   <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
   <header>
     <!-- TODO: nombre o logo del negocio -->
-    <img src="Imagenes/logo.png" alt="Logo" width="300">
-    <nav aria-label="Principal">
+    <img src="/Imagenes/logo.png" alt="Logo" width="600">
+  </header>
+  <nav aria-label="Principal">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="tarifas.html" aria-current="page">Tarifas</a></li>
+        <li><a href="tarifas.html">Tarifas</a></li>
         <li><a href="reservas.html">Reservas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
       </ul>
-    </nav>
-  </header>
+  </nav>
 
   <main>
     <!-- TODO: un único h1 con el título de la página -->
     <h1>Tarifas</h1>
     <!-- TODO (sesión 3): sustituye por el texto real de la carpeta «textos» -->
     <!--<p>Texto de la página.</p> -->
-    
-    
+
+
     <table>
   <caption>Tarifas de alquiler de bicicletas eléctricas</caption>
   <thead>
@@ -48,7 +49,7 @@
       <th scope="col">Modelo</th>
       <th scope="col">Por hora</th>
       <th scope="col">Por dia</th>
-      <th scope="col">Fin de semana</th>      
+      <th scope="col">Fin de semana</th>
     </tr>
 
     <tr>
@@ -79,9 +80,11 @@
   </tfoot>
 </table>
 
+<!--
 <figure>
-      <img src="Imagenes/taller-400.jpg" alt="bicicleta dentro del taller" width="300">
+      <img src="Imagenes/taller-400.jpg" alt="bicicleta dentro del taller" width="800">
     </figure>
+  -->
 
 <table>
   <caption>Precios orientativos del taller</caption>
@@ -121,9 +124,9 @@
 </table>
 
 <table>
-  
+
     <caption>Horario de apertura</caption>
-  
+
 
   <tbody>
 
@@ -134,7 +137,7 @@
       <th>  </th>
     </tr>
 
-    
+
 
     <tr>
       <th scope="row">Lunes a Viernes</th>
@@ -152,24 +155,25 @@
 
     <tr>
       <th scope="colgroup">Domingo</th>
-      <td colspan="2">Cerrado</td>
+      <td>Cerrado</td>
+      <td>Cerrado</td>
     </tr>
-       
+
     </tbody>
 
-    
+
 
     <tfoot>
     <tr>
-      <td colspan="4"><em> <strong>Nota:</strong>Agosto, de 10:00 a 14:00 de lunes a sábado.</em></td>
+      <td colspan="4"><em> <strong>Nota: </strong>Agosto, de 10:00 a 14:00 de lunes a sábado.</em></td>
     </tr>
   </tfoot>
 </table>
 
 </main>
 
-   
-  
+
+
 <hr>
   <footer>
     <!-- TODO: dirección, teléfono (tel:) y correo (mailto:) -->

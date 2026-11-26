@@ -1,3 +1,102 @@
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* Gris muy oscuro (menos agresivo que el negro puro, contraste 15.9:1) */
+  color: #1f2421;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  /* Verde bosque profundo (contraste 5.9:1 sobre blanco, cumple AA y AAA en títulos grandes) */
+  color: #146346;
+  line-height: 1.2;
+}
+
+
+
+ul, ol {
+  list-style: none;
+  padding: 0; /* opcional, quita la sangría izquierda */
+}
+
+
+a {
+  /* Verde esmeralda oscuro (contraste 6.4:1 sobre blanco, muy legible) */
+  color: #0b6623;
+  /* Se recomienda mantener el subrayado en textos para no depender solo del color */
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover, a:focus-visible {
+  /* Terracota / naranja quemado oscuro (contraste 5.1:1; tu #ff7b00 anterior solo tenía 2.5:1) */
+  color: #b84a00;
+}
+
+/* Si decides reactivar tu clase destacado */
+.destacado {
+  font-weight: bold;
+  /* Rojo carmesí (contraste 5.9:1, excelente legibilidad) */
+  color: #b3261e;
+}
+
+main {
+  text-align: center; /* Centra el h1 y los textos dentro de main */
+}
+
+table {
+  width: 40%; /* Opcional: hace que la tabla ocupe todo el ancho disponible */
+  border-collapse: collapse; /* Une los bordes de las celdas en una sola línea */
+  text-align: center;
+  margin: 0 auto;     /* Centra el bloque de la tabla horizontalmente */
+  margin-bottom: 50px;
+}
+
+th, td {
+  border: 1px solid #8a948e; /* Gris con buen contraste para que las líneas se vean nítidas */
+  padding: 0.75rem; /* Espacio interno para que el texto no toque las líneas */
+}
+
+/* Estilo para la fila de encabezados (opcional, mejora mucho la lectura) */
+th {
+  background-color: #146346;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Filas alternas con un verde muy suave para guiar la vista (opcional) */
+tr:nth-child(even) {
+  background-color: #f4f8f6;
+}
+
+form{
+   background-color: #f4f8f6;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 50%;          /* Ocupa todo el ancho disponible de su contenedor */
+  max-width: 100%;      /* Evita que se desborde en pantallas pequeñas */
+  height: auto;         /* Anula la altura fija del HTML */
+  aspect-ratio: 16 / 9; /* Mantiene la proporción panorámica (ideal para vídeos) */
+  border: 1px solid #c5d6cd; /* Borde sutil a juego con tu paleta verde */
+  border-radius: 8px;   /* Esquinas redondeadas igual que el formulario */
+  display: block;       /* Elimina un pequeño espacio en blanco inferior por defecto */
+  text-align: center;
+  margin: 0 auto;     /* Centra el bloque de la tabla horizontalmente */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+
 /* ==========================
    RUEDA LIBRE · estilos.css
    Equipo: NOMBRE DEL EQUIPO
